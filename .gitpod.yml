@@ -1,5 +1,7 @@
-image:
-  file: .gitpod.Dockerfile
+image: bigomics/omicsplayground:v2.8.12
+
+tasks:
+  - command: R -e "shiny::runApp(launch.browser=TRUE)"
 
 ports:
   - port: 3838
